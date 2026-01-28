@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 
 // Rota pública
 Route::get('/', function () {
-    return view('welcome.blade.php');
+    return view('dashboard.index');
 });
 
 // Rotas de autenticação
