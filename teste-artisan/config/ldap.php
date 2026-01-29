@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'hosts' => [env('LDAP_HOSTS', 'ldap://127.0.0.1')],
+    'hosts' => [env('LDAP_HOSTS', '10.23.1.220')],
     'port' => env('LDAP_PORT', 389),
     'base_dn' => env('LDAP_BASE_DN', 'dc=local,dc=com'),
     'username' => env('LDAP_USERNAME', 'cn=admin,dc=local,dc=com'),
@@ -9,6 +9,8 @@ return [
     'timeout' => env('LDAP_TIMEOUT', 5),
     'use_ssl' => env('LDAP_SSL', false),
     'use_tls' => env('LDAP_TLS', false),
+    'version' => 3,
+    'follow_referrals' => false,
     
     // Atributos do usuário LDAP
     'user_attributes' => [
@@ -24,4 +26,5 @@ return [
         'cn=admin,ou=groups,dc=example,dc=com' => 'admin',
         'cn=users,ou=groups,dc=example,dc=com' => 'user',
     ],
+
 ];
