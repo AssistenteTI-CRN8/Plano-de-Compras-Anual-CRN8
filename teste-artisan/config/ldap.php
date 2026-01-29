@@ -3,8 +3,8 @@
 return [
     'hosts' => [env('LDAP_HOSTS', '10.23.1.220')],
     'port' => env('LDAP_PORT', 389),
-    'base_dn' => env('LDAP_BASE_DN', 'dc=local,dc=com'),
-    'username' => env('LDAP_USERNAME', 'cn=admin,dc=local,dc=com'),
+    'base_dn' => env('LDAP_BASE_DN', 'dc=crn8,dc=net'),
+    'username' => env('LDAP_USERNAME', 'cn=admin,dc=crn8,dc=net'),
     'password' => env('LDAP_PASSWORD', ''),
     'timeout' => env('LDAP_TIMEOUT', 5),
     'use_ssl' => env('LDAP_SSL', false),
