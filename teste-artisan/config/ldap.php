@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'hosts' => [env('LDAP_HOSTS', '10.23.1.220')],
+    'hosts' => [env('LDAP_HOSTS', '10.23.1.240')],
     'port' => env('LDAP_PORT', 389),
     'base_dn' => env('LDAP_BASE_DN', 'dc=crn8,dc=net'),
     'username' => env('LDAP_USERNAME', 'cn=admin,dc=crn8,dc=net'),
